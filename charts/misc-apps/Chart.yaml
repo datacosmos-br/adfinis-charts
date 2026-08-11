@@ -2,7 +2,7 @@ apiVersion: v2
 name: misc-apps
 description: Argo CD app-of-apps config for miscellaneous small tools
 type: application
-version: 0.70.0
+version: 0.75.0
 home: https://github.com/adfinis/helm-charts/tree/main/charts/misc-apps
 sources:
   - https://github.com/adfinis/helm-charts
@@ -19,8 +19,10 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: |
-        Deprecate grafanaAgentOperator as it is deprecated upstream.
-        Update grafanaAgentOperator to its last release (chart 0.5.2).
+        Updated Goldilocks to 10.4.1, including:
+          - Goldilocks app remains on v4.14.1
+          - Update optional VPA chart dependency from 4.8.* to 4.12.*
+          - Includes the intermediate VPA dependency update to 4.10.*
       links:
-        - name: Last release and depreciation notice
-          url: https://github.com/grafana/agent/releases/tag/v0.44.3
+        - name: "Goldilocks chart"
+          url: https://github.com/FairwindsOps/charts/tree/master/stable/goldilocks

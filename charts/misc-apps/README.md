@@ -1,6 +1,6 @@
 # misc-apps
 
-![Version: 0.70.0](https://img.shields.io/badge/Version-0.70.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.75.0](https://img.shields.io/badge/Version-0.75.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 Argo CD app-of-apps config for miscellaneous small tools
 
@@ -29,7 +29,7 @@ This chart is maintained by [Adfinis](https://adfinis.com/?pk_campaign=github&pk
 | argocdApps.destination.namespace | string | `"infra-argocd"` | Namespace |
 | argocdApps.enabled | bool | `false` | Enable Argo CD Apps |
 | argocdApps.repoURL | string | [repo](https://argoproj.github.io/argo-helm) | Repo URL |
-| argocdApps.targetRevision | string | `"2.0.4"` | [argocd-apps Helm chart](https://github.com/argoproj/argo-helm/tree/main/charts/argocd-apps) version |
+| argocdApps.targetRevision | string | `"2.0.5"` | [argocd-apps Helm chart](https://github.com/argoproj/argo-helm/tree/main/charts/argocd-apps) version |
 | argocdApps.values | object | [upstream values](https://github.com/argoproj/argo-helm/blob/main/charts/argocd-apps/values.yaml) | Helm values |
 | chartmuseum | object | - | [chartmuseum](https://chartmuseum.com) ([example](./example/chartmuseum.yaml)) |
 | chartmuseum.chart | string | `"chartmuseum"` | Chart |
@@ -51,7 +51,7 @@ This chart is maintained by [Adfinis](https://adfinis.com/?pk_campaign=github&pk
 | goldilocks.destination.namespace | string | `"infra-goldilocks"` | Namespace |
 | goldilocks.enabled | bool | `false` | Enable Goldilocks |
 | goldilocks.repoURL | string | [repo](https://charts.fairwinds.com/stable) | Repo URL |
-| goldilocks.targetRevision | string | `"10.3.0"` | [Goldilocks Helm chart](https://github.com/FairwindsOps/charts/tree/master/stable/goldilocks) |
+| goldilocks.targetRevision | string | `"10.4.1"` | [Goldilocks Helm chart](https://github.com/FairwindsOps/charts/tree/master/stable/goldilocks) |
 | goldilocks.values | object | [upstream values](https://github.com/FairwindsOps/charts/blob/master/stable/goldilocks/values.yaml) | Helm values |
 | grafanaAgentOperator | object | DEPRECATED | [grafana-agent](https://grafana.github.io/helm-charts) is [deprecated](https://github.com/grafana/agent/releases/tag/v0.44.3), use Grafana Alloy instead. [example](./examples/grafana-agent.yaml) |
 | grafanaAgentOperator.annotations | object | `{}` | Annotations for grafana-agent |
@@ -67,14 +67,14 @@ This chart is maintained by [Adfinis](https://adfinis.com/?pk_campaign=github&pk
 | keda.destination.namespace | string | `"infra-keda"` | Namespace |
 | keda.enabled | bool | `false` | Enable KEDA |
 | keda.repoURL | string | [repo](https://kedacore.github.io/charts) | Repo URL |
-| keda.targetRevision | string | `"2.19.0"` | [keda Helm chart](https://github.com/kedacore/charts/tree/main/keda/) version |
+| keda.targetRevision | string | `"2.20.1"` | [keda Helm chart](https://github.com/kedacore/charts/tree/main/keda/) version |
 | keda.values | object | [upstream values](https://github.com/kedacore/charts/blob/main/keda/values.yaml) | Helm values |
 | metallb | object | - | [metallb](https://github.com/metallb/metallb) ([example](./examples/metallb.yaml)) |
 | metallb.chart | string | `"metallb"` | Chart |
 | metallb.destination.namespace | string | `"infra-metallb"` | Namespace |
 | metallb.enabled | bool | `false` | Enable metallb |
 | metallb.repoURL | string | [repo](https://metallb.github.io/metallb) | Repo URL |
-| metallb.targetRevision | string | `"0.15.3"` | [metallb Helm chart](https://github.com/metallb/metallb/tree/main/charts/metallb) |
+| metallb.targetRevision | string | `"0.16.1"` | [metallb Helm chart](https://github.com/metallb/metallb/tree/main/charts/metallb) |
 | metallb.values | object | [upstream values](https://github.com/metallb/metallb/blob/main/charts/metallb/values.yaml) | Helm values |
 | opencost | object | [example](./examples/opencost.yaml) | [OpenCost](https://www.opencost.io) |
 | opencost.annotations | object | `{}` | Annotations for OpenCost |
@@ -82,7 +82,7 @@ This chart is maintained by [Adfinis](https://adfinis.com/?pk_campaign=github&pk
 | opencost.destination.namespace | string | `"infra-opencost"` | Namespace |
 | opencost.enabled | bool | `false` | Enable OpenCost |
 | opencost.repoURL | string | [repo](https://opencost.github.io/opencost-helm-chart) | Repo URL |
-| opencost.targetRevision | string | `"2.5.16"` | [OpenCost Helm chart](https://github.com/opencost/opencost-helm-chart/tree/main/charts/opencost) |
+| opencost.targetRevision | string | `"2.5.26"` | [OpenCost Helm chart](https://github.com/opencost/opencost-helm-chart/tree/main/charts/opencost) |
 | opencost.values | object | [upstream values](https://github.com/opencost/opencost-helm-chart/blob/main/charts/opencost/values.yaml) | Helm values |
 | prometheusMsteams | object | - | [prometheus-msteams](https://github.com/prometheus-msteams/prometheus-msteams) ([example](./example/prometheus-msteams.yaml)) |
 | prometheusMsteams.chart | string | `"prometheus-msteams"` | Chart |

@@ -2,7 +2,7 @@ apiVersion: v2
 name: backup-apps
 description: Argo CD app-of-apps config for backup components
 type: application
-version: 0.6.0
+version: 0.8.0
 home: https://github.com/adfinis/helm-charts/tree/main/charts/backup-apps
 sources:
   - https://github.com/adfinis/helm-charts
@@ -17,4 +17,5 @@ dependencies:
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: "feat: Mark back8sup as DEPRECATED"
+      description: |
+        Disable Barman by default in backup-apps.

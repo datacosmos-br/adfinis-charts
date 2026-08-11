@@ -2,7 +2,7 @@ apiVersion: v2
 name: azure-apps
 description: Argo CD app-of-apps config for Azure applications
 type: application
-version: 0.20.0
+version: 0.22.0
 home: https://github.com/adfinis/helm-charts/tree/main/charts/azure-apps
 sources:
   - https://github.com/adfinis/helm-charts
@@ -19,19 +19,14 @@ annotations:
   artifacthub.io/changes: |
     - kind: changed
       description: |
-        feat: Update promitor
+        feat: Update Azure Key Vault Provider for Secrets Store CSI Driver
+          chart: "csi-secrets-store-provider-azure"
 
-        * update promitor-agent-scraper from 2.14.1 to 2.15.0
-          * Provide capability to configure query lookback in minutes
-          * Provide support for scraping Azure DNS zone metrics
-          * Provide new health check based on data freshness
-          * Azure Monitor Scraper: batch based on aggregation in addition to existing criteria
-        * update promitor-agent-resource-discovery from 0.14.1 to 0.15.0
-          * Provide support for discovering Azure DNS zones
+        * update csi-secrets-store-provider-azure from 1.7.2 to 1.8.2
+          * update Azure Key Vault Provider from v1.7.2 to v1.8.2
+          * update Secrets Store CSI Driver to v1.5.6
+          * update CSI sidecar images (node-driver-registrar v2.14.0, livenessprobe v2.15.0)
+          * includes bug fixes, dependency updates, and maintenance improvements from the 1.8.x release series
       links:
-        - name: Promitor Resource Discovery v0.15.0
-          url: https://github.com/tomkerkhove/promitor/releases/tag/v0.15.0
-        - name:  Scraper-v2.15.0
-          url: https://github.com/tomkerkhove/promitor/releases/tag/Scraper-v2.15.0
-        - name: Changelog
-          url: https://changelog.promitor.io/
+        - name: Azure Key Vault Provider for Secrets Store CSI Driver v1.8.2
+          url: https://github.com/Azure/secrets-store-csi-driver-provider-azure/releases/tag/v1.8.2

@@ -2,7 +2,7 @@ apiVersion: v2
 name: logging-apps
 description: Argo CD app-of-apps config for logging applications
 type: application
-version: 0.48.0
+version: 0.50.0
 home: https://github.com/adfinis/helm-charts/tree/main/charts/logging-apps
 sources:
   - https://github.com/adfinis/helm-charts
@@ -15,9 +15,13 @@ dependencies:
     version: 0.9.1
     repository: https://charts.adfinis.com
 annotations:
-  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/containsSecurityUpdates: "true"
   artifacthub.io/changes: |
     - kind: changed
       description: |
-        Mark fluentd as deprecated due to unmaintained upstream chart and no use-cases for us.
-        Update fluentd from 1.17.1 to 1.19.0
+        Updated Fluent Bit to 0.57.9, including:
+          - Update Fluent Bit OCI image from v5.0.3 to v5.0.9
+          - Includes Fluent Bit image updates v5.0.4 through v5.0.9
+      links:
+        - name: "Fluent Bit Helm chart changelog"
+          url: https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/CHANGELOG.md

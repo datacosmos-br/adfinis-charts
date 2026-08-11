@@ -58,7 +58,7 @@ metallb:
   # -- Chart
   chart: "metallb"
   # -- [metallb Helm chart](https://github.com/metallb/metallb/tree/main/charts/metallb)
-  targetRevision: "0.15.3"
+  targetRevision: "0.16.1"
   # -- Helm values
   # @default -- [upstream values](https://github.com/metallb/metallb/blob/main/charts/metallb/values.yaml)
   values: {}
@@ -120,7 +120,7 @@ argocdApps:
   # -- Chart
   chart: argocd-apps
   # -- [argocd-apps Helm chart](https://github.com/argoproj/argo-helm/tree/main/charts/argocd-apps) version
-  targetRevision: 2.0.4
+  targetRevision: 2.0.5
   # -- Helm values
   # @default -- [upstream values](https://github.com/argoproj/argo-helm/blob/main/charts/argocd-apps/values.yaml)
   values: {}
@@ -142,7 +142,7 @@ keda:
   # -- Chart
   chart: keda
   # -- [keda Helm chart](https://github.com/kedacore/charts/tree/main/keda/) version
-  targetRevision: 2.19.0
+  targetRevision: 2.20.1
   # -- Helm values
   # @default -- [upstream values](https://github.com/kedacore/charts/blob/main/keda/values.yaml)
   values: {}
@@ -206,7 +206,7 @@ opencost:
   # -- Chart
   chart: opencost
   # -- [OpenCost Helm chart](https://github.com/opencost/opencost-helm-chart/tree/main/charts/opencost)
-  targetRevision: 2.5.16
+  targetRevision: 2.5.26
   # -- Helm values
   # @default -- [upstream values](https://github.com/opencost/opencost-helm-chart/blob/main/charts/opencost/values.yaml)
   values: {}
@@ -228,7 +228,7 @@ goldilocks:
   # -- Chart
   chart: goldilocks
   # -- [Goldilocks Helm chart](https://github.com/FairwindsOps/charts/tree/master/stable/goldilocks)
-  targetRevision: 10.3.0
+  targetRevision: 10.4.1
   # -- Helm values
   # @default -- [upstream values](https://github.com/FairwindsOps/charts/blob/master/stable/goldilocks/values.yaml)
   values: {}
