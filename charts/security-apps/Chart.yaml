@@ -27,5 +27,5 @@ annotations:
       links:
         - name: "Secrets Store CSI Driver chart 1.6.0"
           url: https://github.com/kubernetes-sigs/secrets-store-csi-driver/releases/tag/v1.6.0
-        - name: "Secrets Store CSI Driver chart 1.5.6"
+        - name: "Secrets Store CSI Driver chart 1.5.4"
           url: https://github.com/kubernetes-sigs/secrets-store-csi-driver/releases/tag/v1.5.4
