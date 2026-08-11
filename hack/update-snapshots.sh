@@ -14,6 +14,14 @@ source hack/sh/deps/helm.sh
 
 set -x
 
+# Add all repositories used by chart dependencies. This keeps the hook self-sufficient
+# when it is run locally or in pre-commit CI.
+helm repo add adfinis https://charts.adfinis.com --force-update
+helm repo add bitnami https://charts.bitnami.com/bitnami --force-update
+helm repo add secrets-store-csi-driver https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts --force-update
+helm repo add grafana https://grafana.github.io/helm-charts --force-update
+helm repo update
+
 # grab all charts that where modified
 declare -a charts
 for file in "$@"; do
